@@ -1,0 +1,358 @@
+
+
+:root{
+    /* font size */
+    --text-sm: 12px;
+    --text-base: 16px;
+    --text-paragraph: 20px;
+    /* font weight */
+    --font-weight-normal: 400;
+    --font-weight-bold: 700;
+    /* Line Height */
+    --line-height-tight: 1.2;
+    --line-height-normal: 1.5;
+    /* letter spacing */
+    --letter-spacing-tight: -2px;
+    /* font family */
+    --font-family: 'Poppins', serif;
+    /* color */
+    --primary-base:   #1D3557;
+    --primary-tint:   #d0ebff;
+    --blue-base:      #42B3FF;
+    --blue-shdae:     #a5d8ff;
+    --red-shdae:      #D62839;
+    --red-base:       #E63946;
+    --Lime-3:         #c0eb75;
+    --Lime-5:         #94d82d;
+    --grey-base:      #495057;
+    --grey-tint:      #f1f3f5;
+    --grey-shdae:     #212529;
+    --white:          #F8F9FA;
+    --black:          #000000;
+    /*------------------------------ */
+    --nav-height: 100px; 
+
+}
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: var(--font-family);
+    font-weight: var(--font-weight-normal);
+    line-height: var(--line-height-normal);
+    color: var(--white);
+    
+}
+
+main{
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+h1, h2, h3, h4, h5{
+    color: var(--grey-shdae);
+    font-weight: var(--font-weight-bold);
+    letter-spacing: var(--letter-spacing-tight);
+    line-height: var(--line-height-tight);
+}
+.orange{
+    text-align: center;
+}
+
+
+h1{
+    letter-spacing: -2px;
+    font-size: 5.2rem;
+}
+h2{
+    font-size: 4.8rem;
+}
+h3{
+    font-size: 4rem;
+   
+
+}
+ h4{
+   
+    font-size: 2.8rem;
+
+ }
+
+ h5{
+    font-size: 2.4rem;
+ }
+
+p{ 
+    font-size: 2rem;
+    color: var(--black);
+    
+}
+
+a:link , a:visited{
+    color: var(--grey-base);
+}
+
+
+a{
+    
+    text-decoration: none;
+    font-size: 1.6rem;
+    display: inline-block;
+    color: white;
+}
+span{
+    display: inline-block;
+}
+ul{
+    list-style: none;
+}
+
+.small-text{
+    font-size: 1.2rem;
+}
+/* -------------------- COMPONENTS -------------------- */
+
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    border: var(--black) 2px solid;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 4px 8px 16px rgba(0,0,0,0.1);
+    transform: 0;
+    transition:transform 0.3s ease;
+}
+.cards:hover{
+    transform: scale(1.1,1.1);
+}
+.cards-image{
+    width: 200px;
+}
+
+
+.btn{
+    font-size: 1.6rem;
+    font-weight:400 ;
+    text-decoration: none;
+    padding: 1.5rem 1.5rem;
+    border-radius: 8px;
+    transform: translateY(0); /* normal position */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* animate both */
+}
+
+.nav-btn:hover,
+.nav-btn:active {
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease; 
+    color: white;
+    transform: translateY(-2px); 
+    background-color: var(--black); 
+}
+
+
+/* -----navbar----- */
+.navbar{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin: 0 auto;
+}
+nav img{
+    width: 100px;
+}
+.navbar-btn{
+    display: flex;
+    gap: 2.5rem;
+
+
+}
+.GreenColorForBtn{
+        background-color: var(--Lime-5);
+}
+.GreenColorForBtn:hover{
+        background-color: var(--black);
+}
+.BlueColorForBtn{
+    background-color: var(--blue-base);
+}
+
+.BlueColorForBtn:hover {
+    background-color: var(--blue-shdae); /* fix the typo */
+}
+
+.btnGreen:hover,
+.btnGreen:active {
+    transition: transform 0.3s ease, background-color 0.3s ease-in; /* remove extra comma */
+    transform: translateY(-2px); 
+}
+
+.btnGreen{
+    padding: 9px 35px;
+    color: #fff;
+    font-weight: 900;
+    font-size: 15px;
+    border: none;
+    border-radius: 16px;
+    transition: transform 0.3s ease , background-color 0.3s ease-in;
+    transform:0;
+}
+.btnGreen:link, .btnGreen:visited {
+    color: var(--white);
+}
+.btnGreen:hover,
+.btnGreen:active {
+    transition: transform 0.3s ease, background-color 0.3s ease-in,; 
+    transform: translateY(-2px); 
+   
+}
+
+/* ------Hero sectoin-----*/
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width:90%;
+    height: 800px;
+    margin: 0 auto;
+
+    background: 
+      url("images/undraw_quiet-street_v45k.png")
+      center / cover
+      no-repeat; 
+}
+
+/* -----cards sectiom----- */
+
+.cardsSect{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cards h4{
+    font-size: 2rem;
+}
+
+/* -----childRights section----- */
+
+.childRights{
+    display: flex;
+    flex-direction: row;
+    height: 350px;
+    margin-top: 50px;
+    width: auto;
+}
+.childRightsLabel{
+    width:95%;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Lime-3) ;
+    color: #fff;
+    margin-top: 5%;
+    border: black 4px solid;
+    border-radius: 16px;
+    box-shadow: 4px 8px 16px rgba(0,0,0,0.1);
+    justify-content: center;
+    
+}
+
+
+.childRightsLabel h1 {
+    color: #fff;
+    display: block;
+    text-align: right;
+    margin-right: 25px;
+}
+
+.childRights{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.childRightsCon{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin-right: 10%;
+    align-items: center;
+
+}
+.childRightsCon h1 {
+    margin-bottom: 10px;
+    margin-top: 25px;
+}
+
+/* studentSection */
+
+.studentSection{
+    
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+    margin-top: 50px;
+    width: auto;
+}
+
+.stuRightsLabel h1 {
+    color: #fff;
+    display: block;
+    text-align: right;
+    margin-right: 25px;
+}
+
+.stuRightsLabel{
+    width:95%;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--grey-base) ;
+    color: #fff;
+    margin-top: 5%;
+    border: black 4px solid;
+    border-radius: 16px;
+    box-shadow: 4px 8px 16px rgba(0,0,0,0.1);
+    justify-content: center;
+}
+
+/* footer */
+
+footer{
+    position: relative;
+    width: 100%;
+    height: 150px;
+    background-color: #f8f9fa;
+    margin: 20px auto;
+    border-radius: 16px;
+}
+footer img {
+    width: 150px;
+    margin-left: 5%;
+}
+footer h4 {
+    position: absolute;
+    font-size: 2rem;
+    bottom: 0;
+    right: 0;
+}
+footer h5 {
+    position: absolute;
+    font-size: 2rem;
+    bottom:0;
+    left: 0;
+}

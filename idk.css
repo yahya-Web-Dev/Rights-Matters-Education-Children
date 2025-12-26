@@ -1,0 +1,346 @@
+/* ========================================= */
+/* TABLET BREAKPOINT (≤768px) */
+/* ========================================= */
+@media screen and (max-width: 768px) {
+    
+    /* Navbar: Stack vertically */
+    .navbar {
+        flex-direction:row;  /* col*/
+        gap: 1.5rem;
+    }
+    
+    .navbar-btn {
+        flex-direction: column;
+        /* width: 100%; */
+        gap: 1rem;
+        align-items: center;
+    }
+    
+    .navbar-btn li {
+        /* width: 100%; */
+        text-align: center;
+    }
+    
+    
+    
+    .btnGreen {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /* Hero: Reduce height */
+    .hero {
+        height: 500px;
+        width: 100%;
+    }
+
+    /* Cards Section: Stack vertically */
+    .cardsSect {
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .cards {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    /* Child Rights Section: Stack vertically */
+    .childRights {
+        flex-direction: column;
+        height: auto;
+        gap: 3rem;
+        align-items: center;
+    }
+
+    .childRights img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .childRightsLabel {
+        width: 100%;
+    }
+    .stuRightsLabel{
+        width: 100%;
+    }
+    
+    .childRightsCon {
+        width: 100%;
+        margin-right: 0;
+        text-align: center;
+        align-items: center;
+    }
+
+    /* Student Section: Stack vertically */
+    .studentSection {
+        flex-direction: column;
+        height: auto;
+    }
+}
+
+
+/* ========================================= */
+/* TABLET BREAKPOINT (≤768px) */
+/* ========================================= */
+@media screen and (max-width: 768px) {
+    
+    /* Navbar: Keep in row */
+    .navbar-btn {
+        gap: 1.5rem;
+    }
+    
+    .btn {
+        padding: 1rem 1.2rem;
+        font-size: 1.4rem;
+    }
+    
+    .btnGreen {
+        padding: 8px 25px;
+        font-size: 14px;
+    }
+
+    /* Hero: Reduce font size and increase height */
+    .hero {
+        height: 600px;
+        width: 100%;
+    }
+    
+    .hero h1 {
+        font-size: 3.6rem;
+    }
+    
+    .hero p {
+        font-size: 1.6rem;
+    }
+
+    /* Cards Section: Stack vertically */
+    .cardsSect {
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .cards {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    /* Child Rights Section: Stack vertically */
+    .childRights {
+        flex-direction: column;
+        height: auto;
+        gap: 3rem;
+        align-items: center;
+    }
+
+    .childRights img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .childRightsLabel {
+        width: 100%;
+    }
+    .stuRightsLabel{
+        width: 100%;
+    }
+    
+
+    .childRightsCon {
+        width: 100%;
+        margin-right: 0;
+        text-align: center;
+        align-items: center;
+    }
+
+    /* Student Section: Stack vertically */
+    .studentSection {
+        flex-direction: column;
+        height: auto;
+    }
+}
+
+/* ========================================= */
+/* MOBILE BREAKPOINT (≤480px) */
+/* ========================================= */
+@media screen and (max-width: 480px) {
+    
+    /* Navbar: Stack on very small screens */
+    .navbar {
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+    
+    .navbar-btn {
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+        align-items: center;
+    }
+    
+    .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /* Hero: Smaller fonts and height */
+    .hero {
+        height: 450px;
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero p {
+        font-size: 1.4rem;
+    }
+
+    /* Cards: Full width */
+    .cards {
+        width: 100%;
+        max-width: none;
+    }
+
+    /* Child Rights Label: Center text */
+    .childRightsLabel h1 {
+        text-align: center;
+        margin-right: 0;
+    }
+    .stuRightsLabel h1{
+        text-align: center;
+        margin-right: 0;
+    }
+
+    /* Button: Full width */
+    .btnGreen {
+        max-width: none;
+        width: 100%;
+    }
+}
+/* ========================================= */
+/* TABLET BREAKPOINT (≤768px) */
+/* ========================================= */
+@media screen and (max-width: 768px) {
+    
+    /* Navbar: Keep in row - reduce spacing */
+    .navbar-btn {
+        gap: 1.5rem;
+    }
+    
+    .btn {
+        padding: 1rem 1.2rem;
+        font-size: 1.4rem;
+    }
+    
+    .btnGreen {
+        padding: 8px 25px;
+        font-size: 14px;
+    }
+
+    /* Hero: Reduce font size and increase height */
+    .hero {
+        height: 600px;
+        width: 100%;
+    }
+    
+    .hero h1 {
+        font-size: 3rem;
+    }
+    .childRights h1{
+        font-size: 3rem;
+    }
+    .childRights p {
+        font-size: 1.6rem;
+        margin-bottom: 10px;
+    }
+    .hero p {
+        font-size: 1.6rem;
+    }
+
+    /* Cards Section: Stack vertically */
+    .cardsSect {
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .cards {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    /* Child Rights Section: Stack vertically */
+    .childRights {
+        flex-direction: column;
+        height: auto;
+        gap: 3rem;
+        align-items: center;
+    }
+
+    .childRights img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .childRightsLabel {
+        width: 100%;
+    }
+    .stuRightsLabel{
+         width: 100%;
+    }
+    .childRightsCon {
+        width: 100%;
+        margin-right: 0;
+        text-align: center;
+        align-items: center;
+    }
+
+    /* Student Section: Stack vertically */
+    .studentSection {
+        flex-direction: column;
+        height: auto;
+    }
+}
+
+/* ========================================= */
+/* FORCE NAVBAR HORIZONTAL ON MOBILE/TABLET */
+/* ========================================= */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: row !important; /* keep horizontal */
+        justify-content: space-between; /* optional: spacing between items */
+        align-items: center;
+    }
+    .navbar-btn {
+        flex-direction: row !important; /* ensure buttons stay in a row */
+        gap: 1rem; /* adjust spacing as needed */
+        width: auto; /* prevent shrinking */
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar {
+        flex-direction: row !important;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navbar-btn {
+        flex-direction: row !important;
+        gap: 0.5rem;
+        width: auto;
+        align-items: center;
+    }
+    nav img{
+         width: 50px;
+    }
+    footer img{
+       width: 100px; 
+    }
+    footer h5 {
+        display: none;
+    }
+}
