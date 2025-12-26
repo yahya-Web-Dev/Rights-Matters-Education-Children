@@ -33,7 +33,7 @@ Media queries assisted by AI to ensure responsiveness
 Focused on clarity, accessibility, and simplicity
 
 🌐 Live Demo
-View the website here
+https://yahya-web-dev.github.io/Rights-Matters-Education-Children/
 
 📚 Sources
 
